@@ -25,3 +25,4 @@ windows_ioc_scan.exe -ioc "baidu.com,google.com"
 test
 
 ajskljdlkas
+asdasd
