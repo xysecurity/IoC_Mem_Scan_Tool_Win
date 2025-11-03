@@ -11,19 +11,20 @@
 
 # 使用方式
 ## 1、交互式方式
-### 1-1  式输入待查询IOC
+### 1-1  交互式输入待查询IOC
 直接打开程序文件，根据提示输入IOC，按确认键输入即可
 
 <img width="852" height="328" alt="image" src="https://github.com/user-attachments/assets/b21439cd-1e1d-4503-83cc-d08226c5512c" />
 
 ### 1-2 交互式输入待查询IOC文件
-也可以将IOC存入文件中，通过换行进行分割，交互式输入框中，在提示输入待查询IOC时按回车跳过，在接下来提示输入待查询IOC文件时输入文件路径
+将IOC存入文件中，通过换行进行分割，交互式输入框中，在提示输入待查询IOC时按回车跳过，在接下来提示输入待查询IOC文件时输入文件路径
 
 <img width="1690" height="240" alt="image" src="https://github.com/user-attachments/assets/9c49c419-25ee-4911-8117-2e84cc0b19f1" />
 
 
 ## 2、命令行方式
 ### 2-1  命令行输入待查询IOC
+在命令行中输入如下指令 
 
 windows_ioc_scan.exe -ioc "待查询IOC"
 
@@ -52,7 +53,10 @@ windows_ioc_scan.exe -ioc "baidu.com,google.com"
 
 windows_ioc_scan.exe -iocfile "test_ioc.txt"
 
+程序自动完成文件中的IOC读取并检索。
+
 <img width="1709" height="391" alt="image" src="https://github.com/user-attachments/assets/fb511a63-c345-42a4-bf54-3f4abaa52467" />
+
 
 
 
