@@ -1,6 +1,8 @@
 ﻿# IoC_Mem_Scan_Tool
 高性能的威胁情报IOC Windows终端搜索工具，使用go语言编写，可实现指定IOC在当前主机内存下的搜索。
 
+支持 域名，IP或指定字符串的内存检索。
+
 底层使用Boyer-Moore-Horspool算法优化查询速度，同时使用异步协程的方式，加快整机查询速度。
 
 实测单个IOC 16G内存可在30s内完成整体检索。
@@ -8,6 +10,13 @@
 # 使用场景
 
 主要适用于在网络侧 NDR或IDS中检测到主机端侧存在IOC外联相关威胁行为，安服上机取证或受害者自行排查，方便基于检测出的IOC外联，快速定位存在外联的进程，从而最快完成取证和威胁发现。
+
+例如，在运行CobaltString 木马的主机上搜索回连远控服务器IP
+
+<img width="2031" height="935" alt="image" src="https://github.com/user-attachments/assets/b4f53d0b-5680-43cc-be3c-41e22cb51f5d" />
+
+在运行银狐木马的主机中搜索银狐远控Domain
+
 
 # 使用方式
 ## 1、交互式方式
@@ -56,6 +65,7 @@ windows_ioc_scan.exe -iocfile "test_ioc.txt"
 程序自动完成文件中的IOC读取并检索。
 
 <img width="1709" height="391" alt="image" src="https://github.com/user-attachments/assets/fb511a63-c345-42a4-bf54-3f4abaa52467" />
+
 
 
 
